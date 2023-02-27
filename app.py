@@ -14,4 +14,4 @@ st.markdown("""
 
     Inside every manga's page, we have acces to the list of chapters and their information, as we can see in the next screeshot from the "Beyond The Sky"'s page:
 """)
-st.image(Image.open('manga_ss.PNG'), caption='Manga SS')
+st.image(Image.open('./manga_ss.PNG'), caption='Manga SS')
