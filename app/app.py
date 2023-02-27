@@ -14,5 +14,20 @@ st.markdown("""
 
     Inside every manga's page, we have acces to the list of chapters and their information, as we can see in the next screeshot from the "Beyond The Sky"'s page:
 """)
-st.image(Image.open('./manga2_ss.PNG'), caption='Manga SS')
-st.image(Image.open('./../manga_ss.PNG'), caption='Manga SS')
+tab1, tab2, tab3, tab4 = st.tabs(["./app/m2", "./m2", "./../m", "./m"])
+
+with tab1:
+    st.header("./app/manga2_ss.PNG")
+    st.image(Image.open('./app/manga2_ss.PNG'), caption='Manga SS')
+
+with tab2:
+    st.header("./manga2_ss.PNG")
+    st.image(Image.open('./manga2_ss.PNG'), caption='Manga SS')
+
+with tab3:
+    st.header("./../manga_ss.PNG")
+    st.image(Image.open('./../manga_ss.PNG'), caption='Manga SS')
+
+with tab4:
+    st.header("./manga_ss.PNG")
+    st.image(Image.open('./manga_ss.PNG'), caption='Manga SS')
